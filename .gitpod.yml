@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: Configure KubeConfig
+    command: echo $K8S_CONFIG | base64 -d > ~/.kube/config
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
